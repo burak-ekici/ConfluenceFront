@@ -1,6 +1,9 @@
 <template>
-<div class="h-screen w-screen overflow-hidden ">
-  <LandingPage />
+<div class="w-full MainContainer overflow-hidden" >
+  <div class="h-full PageContainer w-full overflow-hidden ">
+    <FirstPageFirstSectionLandingPage />
+    <FirstPageSecondSectionPrincipal />
+  </div>
 </div>
 </template>
 
@@ -10,3 +13,22 @@ export default {
   
 }
 </script>
+
+<style scoped>
+
+@media screen and (min-width: 1920px){
+  .PageContainer{
+    width:1920px;
+  }
+  .MainContainer{
+    display:flex;
+    flex-flow:column wrap;
+    align-content:center;
+    background: #f2f2f2;
+  }
+
+}
+</style>
+
+
+

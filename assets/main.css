@@ -7,10 +7,13 @@
 html, body {
   height: 100%;
   --main-color : #0386FE,
+  scrollbar-width:0;
 }
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+  -ms-overflow-style: none;  /* remove scrollbar for IE and Edge */
+  scrollbar-width: none;  /* remove scrollbar for Firefox */
 }
 img, picture, video, canvas, svg {
   display: block;
@@ -24,6 +27,9 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 #root, #__next {
   isolation: isolate;
+}
+body::-webkit-scrollbar{
+  display:none /* remove scrollbar for chrome safari opera brave */
 }
 
 

@@ -1,5 +1,5 @@
 <template>
-  <div class="relative h-screen absolute top-0 bottom-0">
+  <div ref="landingPage" id="first" class="relative w-full h-screen absolute top-0 bottom-0 md:flex">
 
     <div class="principal relative">
 
@@ -25,43 +25,48 @@
 
         </div>
 
-        <WhiteBlockFirstSection />
+        <FirstPageFirstSectionWhiteBlock :observed="observerIsActivatedComputed" />
 
       </div>
 
     </div>
 
-    <div class="secondSection flex w-full">
-      <div class="section1 w-1/2 flex flex-col">
-        <p class="texteBlockGauche">TRANSPORTS ROUTIERS 
-          & FRET INTERURBAINS
-        </p>
-        <div class="flex justify-between">
-          <img class="w-1/2" :src="require('~/assets/container_icon.png')" alt="contour d'un container">
-          <nuxt-link to="/"><font-awesome-icon class="w-1/2 arrowBlockGauche transform -rotate-90" :icon="['fas', 'arrow-down-long']" /></nuxt-link>
-        </div>
-      </div>
-      <div class="section2 w-1/2 bg-black text-white">
-        <p class="texteBlockDroite">Location
-          de
-          bennes 
-        </p>
-        <div class="flex justify-between">
-          <img class="w-1/2 img2" :src="require('~/assets/dumpster_icon.png')" alt="contour d'un container">
-          <nuxt-link to="/"><font-awesome-icon class="w-1/2 arrowBlockDroite transform -rotate-90" :icon="['fas', 'arrow-down-long']" /></nuxt-link>
-        </div>
-      </div>
-    </div>
+    <FirstPageFirstSectionSecondSection />
 
-    <FaireDefilerBottom hashToScroll="#" />
+    <FaireDefiler hashToScrollBottom="second" hashToScrollTop="" />
 
   </div>
 </template>
 
 <script>
-import WhiteBlockFirstSection from "./firstPage/WhiteBlockFirstSection.vue";
 export default{
-    components: { WhiteBlockFirstSection }
+    data(){
+      return{
+        observerIsActivated : false
+      }
+    },
+    computed: {
+      observerIsActivatedComputed(){
+        return this.observerIsActivated
+      }
+    },
+    mounted(){
+      const options = {
+        root: null,
+        rootMargin: '0px',
+        threshold:0.2
+      }
+      const observer = new IntersectionObserver((entries , observer)=>{
+        entries.forEach( entry => {
+          if(entry.isIntersecting){
+            this.observerIsActivated = true
+          }
+        })
+        
+      }, options);
+
+      observer.observe(this.$refs.landingPage)
+    }
 }
 </script>
 
@@ -75,7 +80,7 @@ export default{
 }
 .insidePrincipal{
   background: rgba(255,255,255,0.5);
-  line-height: 1.6rem;
+  line-height: 1.2vw;
 }
 
 .PremierP{
@@ -89,7 +94,7 @@ export default{
   font-family: 'Montserrat', sans-serif;
   font-size:14px;
   font-weight:500;
-  line-height: 1rem;
+  line-height: 0.75vw;
 }
 .button{
   border-width: 2px;
@@ -103,60 +108,7 @@ export default{
   left:20px;
 }
 
-.secondSection{
-  height: calc(25% - 8%)
-}
 
-.section1, .section2{
-  position:relative
-}
-
-.texteBlockGauche{
-  font-family: 'Montserrat', sans-serif;
-  font-weight:600;
-  font-size :11px;
-  font-style: italic;
-  width:75%;
-  padding-left:10%;
-  padding-top:5%;
-  letter-spacing: 1.5px;
-  height:50%;
-  line-height: 0.8rem;
-}
-.texteBlockDroite{
-  font-family: 'Montserrat', sans-serif;
-  font-weight:600;
-  font-size :11px;
-  font-style: italic;
-  width:55%;
-  padding-left:10%;
-  padding-top:5%;
-  letter-spacing: 1.5px;
-  text-transform: uppercase;
-  height:50%;
-  line-height: 0.8rem;
-}
-
-img{
-  width:40px;
-  margin: 10px 0 0 10%
-}
-.img2{
-  color:white;
-  width:40px;
-  margin: 10px 0 0 10%
-}
-
-.arrowBlockGauche{
-  font-size:2.5rem;
-  margin-top:15px;
-  margin-right:30px
-}
-.arrowBlockDroite{
-  font-size:2.5rem;
-  margin-top:15px;
-  margin-right:30px
-}
 
 @media screen and (max-width: 365px){
   .PremierP{
@@ -172,28 +124,13 @@ img{
   }
   .SecondP, .TroisiemeP{
   font-size:14px;
-  line-height: 0.9rem;
+  line-height: 0.7vw;
   margin-top:40px
 }
   .arrow{
     left:3px;
     top:0px
   }
-
-  .texteBlockDroite , .texteBlockGauche{
-    font-size:8px;
-    line-height: 11px;
-  } 
-
-  img{
-  width:30px;
-  margin: 5px 0 0 10%
-}
-.img2{
-  color:white;
-  width:30px;
-  margin: 5px 0 0 10%
-}
 
 }
 
@@ -214,7 +151,7 @@ img{
 
   .SecondP, .TroisiemeP{
     font-size:17px;
-    line-height: 1.3rem;
+    line-height: 1vw;
     margin-top:9%;
   }
 
@@ -226,21 +163,21 @@ img{
 @media screen and (min-width: 769px){
   .principal{
     height:100%;
-    width:65%;
+    width:60%;
   }
   .insidePrincipal{
-    padding:20% 5% 0% calc(5% + 4rem) ;
+    padding:10% 5% 0% calc(5% + 5rem) ;
   }
   .PremierP{
-    font-size:2vw;
-    line-height: 2.2rem;
+    font-size:clamp(30px,2vw,40px);
+    line-height: clamp(40px,2.5vw,55px);
     margin-top:11%
   }
 
   .SecondP, .TroisiemeP{
-    font-size:1.4vw;
+    font-size:clamp(20px,2.5vw,25px);;
     font-weight: 500;
-    line-height: 1.8rem;
+    line-height: clamp(25px,5vw,33px);
   }
   .TroisiemeP{
     margin-top:0
@@ -252,7 +189,7 @@ img{
   }
   .button{
     padding:1.5vh 4vh;
-    font-size:1vw;
+    font-size:0.75vw;
   }
   .arrow{
     top:0

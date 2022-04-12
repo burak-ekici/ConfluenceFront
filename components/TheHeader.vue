@@ -1,6 +1,6 @@
 <template>
-<div class="w-full lg:h-24 h-16 absolute top-0">
-  <div class = 'w-full lg:h-24 h-16 flex bg-main-color fixed z-50'>
+<div class="premierContaineur w-full lg:h-24 h-16 absolute top-0">
+  <div class='secondContaineur w-full lg:h-24 h-16 flex bg-main-color fixed z-50'>
       
       <div class='lg:w-1/3 w-1/2 ml-8 md:ml-20 h-full flex flex-col justify-center text-white'>
         <h1 class=' text-xl sm:text-2xl font-black tracking-wide conff'>CONFLUENCE</h1>
@@ -8,7 +8,7 @@
       </div>
 
       <MenuBurger />
-                                    
+      
       <div class='hidden md:w-2/3 w-1/2 md:flex items-center pr-10'>
         <nav class="w-full text-center text-white flex items-center justify-between lg:justify-around text-sm font-semibold">
           <NuxtLink class="hover:text-black ease-out duration-100" to='/a'>
@@ -48,6 +48,7 @@
 .nuxt-link-active {
   color:rgb(83, 194, 246)
 }
+
 a:hover:not(.nuxt-link-active){
   color:#023564;
 }
@@ -70,5 +71,16 @@ nav{
   .transpp{
     letter-spacing: 4.6px;
   }
+}
+
+@media screen and (min-width: 1920px){
+  .premierContaineur{
+    display:flex;
+    justify-content: center;
+  }
+  .secondContaineur{
+    max-width:1920px;
+  }
+
 }
 </style>

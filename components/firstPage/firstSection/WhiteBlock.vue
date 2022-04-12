@@ -45,39 +45,46 @@
 
 <script>
 export default {
-  data(){
-    return{
-      count1: 7818,
-      count2: 3120,
-      count3: 1784,
-      count4: 800,
+  props:{
+    observed:{
+      type:Boolean
     }
   },
-  mounted(){
-    const counters = [this.$refs.count1,this.$refs.count2, this.$refs.count3, this.$refs.count4]
-    counters.forEach(element => {
-      element.innerText = '0'
-      const updateCounter = ()=>{
-        const limit = +element.getAttribute('data-target')
-        const increment = Math.floor(limit / 300)
-        let currentValue = 0;
-        const intId = setInterval(()=>{
-          if(currentValue >= limit){
-            clearInterval(intId)
-            if(+element.getAttribute('data-target') === 800){
-              element.innerText = limit + 'm²'
-              return
-            }
-            element.innerText = limit
-          }else{
-            element.innerText = currentValue
-            currentValue += increment
-          }
-        },1)
+  watch:{
+    observed(newValue , oldValue){
+      if(newValue === true){
+        this.incrementCounter()
       }
-      updateCounter()
-    })
+    }
+  },
+  methods:{
+    incrementCounter(){
+      const counters = [this.$refs.count1,this.$refs.count2, this.$refs.count3, this.$refs.count4]
+        counters.forEach(element => {
+          element.innerText = '0'
+          const updateCounter = ()=>{
+            const limit = +element.getAttribute('data-target')
+            const increment = Math.floor(limit / 300)
+            let currentValue = 0;
+            const intId = setInterval(()=>{
+              if(currentValue >= limit){
+                clearInterval(intId)
+                if(+element.getAttribute('data-target') === 800){
+                  element.innerText = limit + 'm²'
+                  return
+                }
+                element.innerText = limit
+              }else{
+                element.innerText = currentValue
+                currentValue += increment
+              }
+            },1)
+          }
+          updateCounter()
+        })
+    }
   }
+
 }
 </script>
 
@@ -85,13 +92,34 @@ export default {
 
 .blockPrincipal{
   width: 100%;
-  height:13vw;
-  margin-top: 5vh;
+  height:7vw;
+  margin-top: 4vh;
 }
 .block{
   width:25%;
   background: #FFFCFC ;
   display:flex;
+}
+.block p:nth-child(3){
+  margin-left:-2px
+}
+/* .block:nth-child(1){
+  border-right: 1px solid #0386FE;
+}
+.block:nth-child(2){
+  border-right: 1px solid #0386FE;
+}
+.block:nth-child(3){
+  border-right: 1px solid #0386FE;
+} */
+.block:nth-child(1){
+  border-right: 1px solid black;
+}
+.block:nth-child(2){
+  border-right: 1px solid black;
+}
+.block:nth-child(3){
+  border-right: 1px solid black;
 }
 .imgContainer{
   width:50%;
@@ -112,23 +140,24 @@ img{
   display: flex;
   flex-flow:column wrap;
   justify-content: baseline;
-  padding-top:25%
+  padding-top:1vw
 }
 
 h3{
   font-family: 'Montserrat', sans-serif;
   font-style: italic;
   font-weight: 600;
-  font-size:0.9vw
+  font-size:0.65vw;
+  margin-left:-5px
 }
 p{
   font-family: 'Montserrat', sans-serif;
-  font-size:0.6vw;
+  font-size:0.4vw;
   font-weight: 600;
 }
 .number{
   font-weight: 800;
-  font-size: 1.2vw;
+  font-size: 0.9vw;
   margin-top:0.7vw
 }
 </style>
