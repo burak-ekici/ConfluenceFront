@@ -67,6 +67,8 @@ export default {
   transition : all 0.5s
 }
 
-
+@media only screen and ( min-resolution: 190dpi){
+  
+}
 
 </style>

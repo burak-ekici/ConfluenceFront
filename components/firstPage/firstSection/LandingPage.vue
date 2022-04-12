@@ -85,9 +85,10 @@ export default{
 
 .PremierP{
   font-family: 'Montserrat', sans-serif;
-  font-size:24px;
+  font-size:20px;
   font-weight:bold;
   letter-spacing: 4px;
+  line-height: 30px;
 }
 
 .SecondP, .TroisiemeP{
@@ -95,6 +96,7 @@ export default{
   font-size:14px;
   font-weight:500;
   line-height: 0.75vw;
+  line-height: 20px;
 }
 .button{
   border-width: 2px;
@@ -117,16 +119,16 @@ export default{
   margin-top: -10px
 }
   .button{
-    padding:5px 15px;
-    margin-top:20px;
+    padding:10px 25px;
+    margin-top:10px;
     padding:5px 11px;
     font-size: 9px;
   }
   .SecondP, .TroisiemeP{
-  font-size:14px;
-  line-height: 0.7vw;
-  margin-top:40px
-}
+    font-size:14px;
+    line-height: 20px;
+    margin-top:20px
+  }
   .arrow{
     left:3px;
     top:0px
@@ -136,7 +138,7 @@ export default{
 
 @media screen and (min-width:366px) and (max-width: 464px){
   .button{
-    margin-top:60px
+    margin-top:0px
   }
 }
 
@@ -152,7 +154,7 @@ export default{
   .SecondP, .TroisiemeP{
     font-size:17px;
     line-height: 1vw;
-    margin-top:9%;
+    margin-top:4%;
   }
 
   .buttonDiv{
@@ -205,6 +207,17 @@ export default{
   }
 }
 
+@media screen and (min-height: 1400px){
+  .PremierP{
+    margin-top: 200px;
+  }
+  .SecondP, .TroisiemeP{
+    margin-top:50px
+  }
+}
 
+@media only screen and ( min-resolution: 190dpi){
+  
+}
 
 </style>

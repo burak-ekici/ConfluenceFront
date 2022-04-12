@@ -14,8 +14,8 @@ export default {
 }
 </script>
 
-<style scoped>
-
+<style lang="scss" scoped>
+@import '@/assets/scss/_variables.scss';
 @media screen and (min-width: 1920px){
   .PageContainer{
     width:1920px;
@@ -24,7 +24,7 @@ export default {
     display:flex;
     flex-flow:column wrap;
     align-content:center;
-    background: #f2f2f2;
+    background-color: #041b31
   }
 
 }

@@ -1,5 +1,5 @@
 <template>
-  <div class=" hidden md:flex blockPrincipal">
+  <div class=" hidden md:flex blockPrincipal" >
     <div class="block rounded-tl-md rounded-bl-md">
       <div class="imgContainer">
         <img src="~/assets/box_icon.png" alt="eye">
@@ -55,6 +55,9 @@ export default {
       if(newValue === true){
         this.incrementCounter()
       }
+    },
+    height(newValue){
+      this.height = newValue
     }
   },
   methods:{
@@ -84,6 +87,8 @@ export default {
         })
     }
   }
+    
+  
 
 }
 </script>
@@ -92,13 +97,22 @@ export default {
 
 .blockPrincipal{
   width: 100%;
-  height:7vw;
   margin-top: 4vh;
+}
+
+.block::before{
+	content: "";
+	float: left;
+	padding-bottom: 45%; 	/* initial ratio of 1:1*/
+	padding-top: 45%; 	/* initial ratio of 1:1*/
 }
 .block{
   width:25%;
   background: #FFFCFC ;
   display:flex;
+  height:100%;
+  justify-content: center;
+  align-items: center;
 }
 .block p:nth-child(3){
   margin-left:-2px
@@ -160,4 +174,25 @@ p{
   font-size: 0.9vw;
   margin-top:0.7vw
 }
+
+@media screen and (min-width: 1920px){
+  .Pcontainer{
+    padding-top:0px;
+  }
+
+  h3{
+    font-size:17px;
+    margin-left:-10px
+  }
+
+  p{
+    font-size:12px;
+  }
+  .number{
+    font-size:30px;
+    margin-top:18px
+
+  }
+}
+
 </style>

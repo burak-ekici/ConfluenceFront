@@ -6,7 +6,7 @@
           <nuxt-link v-if="!removeTopArrow" :to="{path: this.$route.path, hash : hashToScrollTop }" class="hidden md:block"><font-awesome-icon class="transform scale-150" :icon="['fas', 'long-arrow-down']" /></nuxt-link>
       </div>
       
-      <p class="text-white md:block md:transform md:-rotate-90 text-center md:tracking-widest md:pt-0"> FAIRE DEFILER</p>
+      <p class="texteDefiler text-white md:block md:transform md:-rotate-90 text-center md:tracking-widest md:pt-0"> FAIRE DEFILER</p>
       <!-- arrow  -->
       <div class="text-white">
           <nuxt-link v-if="!removeBottomArrow" :to="{path: this.$route.path, hash : hashToScrollBottom }"><font-awesome-icon class="transform scale-150" :icon="['fas', 'long-arrow-down']" /></nuxt-link>
@@ -75,5 +75,22 @@ p{
   }
 }
 
-
+@media only screen and ( min-resolution: 190dpi){
+  .containeur{
+    bottom:0;
+    left:0;
+    right:0;
+    width:100%;
+    height:8%;
+    padding : 2rem 0 ;
+    display:flex;
+    justify-content: space-between;
+    flex-flow:row nowrap;
+    padding: 0 2rem;
+    z-index: 10;
+  }
+  .texteDefiler{
+    transform: rotate(0);
+  }
+}
 </style>

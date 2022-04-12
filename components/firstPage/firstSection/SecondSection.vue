@@ -170,4 +170,12 @@ img{
     letter-spacing: clamp(4px, 0.15vw , 15px);
   }
 }
+
+/* @media only screen and ( min-resolution: 190dpi){
+  .secondSection{
+    height: calc(25% - 8%);
+    width:100%
+  }
+
+} */
 </style>
