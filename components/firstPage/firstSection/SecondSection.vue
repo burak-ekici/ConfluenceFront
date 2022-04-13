@@ -11,7 +11,7 @@
         
         <div><nuxt-link to="/" class="button hidden md:block text-black absolute cursor-pointer z-20 px-4 py-3 bg-black text-white rounded">Découvrir nos offres <font-awesome-icon class="transform -rotate-90 ml-4  scale-150" :icon="['fas', 'long-arrow-down']" /></nuxt-link></div>
 
-        <div class="flex justify-between">
+        <div class="flex justify-between logoArrowContainer1">
 
           <img class="w-1/2 md:hidden" :src="require('~/assets/container_icon.png')" alt="contour d'un container">
 
@@ -32,7 +32,7 @@
 
         <div><nuxt-link to="/" class="button hidden md:block text-black absolute cursor-pointer z-20 px-4 py-3 bg-black text-white rounded">Découvrir nos offres <font-awesome-icon class="transform -rotate-90 ml-4  scale-150" :icon="['fas', 'long-arrow-down']" /></nuxt-link></div>
 
-        <div class="flex justify-between w-full">
+        <div class="flex justify-between logoArrowContainer2">
 
           <img class="w-1/2 img2 md:hidden" :src="require('~/assets/dumpster_icon.png')" alt="contour d'un container">
 
@@ -142,6 +142,33 @@ img{
   }
 
 }
+@media screen and (min-width: 366px) and (max-width : 767px){
+  .texteBlockDroite , .texteBlockGauche{
+    font-size:9px;
+    line-height: 12px;
+  } 
+  .arrowBlockDroite, .arrowBlockGauche{
+    transform: scale(0.75) rotate(-90deg);
+    
+  }
+}
+@media screen and (min-width: 366px) and (max-width : 767px) and (min-resolution: 190dpi){
+  
+  .secondSection{
+    height: calc(25% - 8%);
+    overflow: hidden;
+  }
+  .logoArrowContainer1{
+    padding-bottom: 2vw;
+  }
+  .logoArrowContainer2{
+    padding-bottom: 2vw;
+  }
+  .arrowBlockDroite, .arrowBlockGauche{
+    transform: scale(0.75) rotate(-90deg);
+    
+  }
+}
 
 @media screen and ( min-width: 768px){
   .secondSection{
@@ -174,11 +201,4 @@ img{
   }
 }
 
-/* @media only screen and ( min-resolution: 190dpi){
-  .secondSection{
-    height: calc(25% - 8%);
-    width:100%
-  }
-
-} */
 </style>
