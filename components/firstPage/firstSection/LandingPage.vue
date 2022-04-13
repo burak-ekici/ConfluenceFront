@@ -101,10 +101,9 @@ export default{
 .button{
   border-width: 2px;
   font-size:12px;
-  font-family: 'Montserrat', sans-seri8;;
-  font-weight:bold
+  font-family: 'Montserrat', sans-serif;
+  font-weight:bold;
 }
-
 .arrow{
   top: 2px;
   left:20px;
@@ -114,18 +113,17 @@ export default{
 
 @media screen and (max-width: 365px){
   .PremierP{
-  font-size:20px;
+  font-size:14px;
   letter-spacing: 3px;
   margin-top: -10px
 }
   .button{
-    padding:10px 25px;
     margin-top:10px;
-    padding:5px 11px;
+    padding:10px 20px;
     font-size: 9px;
   }
   .SecondP, .TroisiemeP{
-    font-size:14px;
+    font-size:10px;
     line-height: 20px;
     margin-top:20px
   }
@@ -171,19 +169,19 @@ export default{
     padding:10% 5% 0% calc(5% + 5rem) ;
   }
   .PremierP{
-    font-size:clamp(30px,2vw,40px);
-    line-height: clamp(40px,2.5vw,55px);
-    margin-top:11%
+    font-size:clamp(15px,2vw,25px);
+    line-height: clamp(20px,2.5vw,35px);
+    margin-top:11%;
+    margin-bottom: 20px;
   }
 
   .SecondP, .TroisiemeP{
-    font-size:clamp(20px,2.5vw,25px);;
+    font-size:clamp(13px,2.5vw,17px);;
     font-weight: 500;
-    line-height: clamp(25px,5vw,33px);
+    line-height: clamp(18px,3vw,25px);
+    margin-top:30px
   }
-  .TroisiemeP{
-    margin-top:0
-  }
+
 
   .buttonDiv{
     margin-top:5%;
@@ -207,6 +205,16 @@ export default{
   }
 }
 
+@media screen and (min-height: 900px) and (min-width : 1700px){
+  .PremierP{
+    font-size : 25px;
+  }
+  .SecondP, .TroisiemeP{
+    font-size:17px;
+    margin-top:20px
+  }
+}
+
 @media screen and (min-height: 1400px){
   .PremierP{
     margin-top: 200px;
@@ -216,7 +224,24 @@ export default{
   }
 }
 
-@media only screen and ( min-resolution: 190dpi){
+@media only screen and ( min-resolution: 190dpi) and (max-width: 464px){
+  
+  .insidePrincipal{
+    padding-top : 100px;
+  }
+  .PremierP{
+    font-size: 14px;
+  }
+  .SecondP,.TroisiemeP{
+    font-size : 10px;
+    margin-top: 20px;
+  }
+  .button{
+    font-size: 10px;
+  }
+  .buttonDiv{
+    margin-top:20px
+  }
   
 }
 

@@ -9,7 +9,7 @@
           & FRET INTERURBAINS
         </p>
         
-        <div><nuxt-link to="/" class="button text-black absolute cursor-pointer z-20 px-4 py-3 bg-black text-white rounded">Découvrir nos offres <font-awesome-icon class="transform -rotate-90 ml-4  scale-150" :icon="['fas', 'long-arrow-down']" /></nuxt-link></div>
+        <div><nuxt-link to="/" class="button hidden md:block text-black absolute cursor-pointer z-20 px-4 py-3 bg-black text-white rounded">Découvrir nos offres <font-awesome-icon class="transform -rotate-90 ml-4  scale-150" :icon="['fas', 'long-arrow-down']" /></nuxt-link></div>
 
         <div class="flex justify-between">
 
@@ -30,9 +30,9 @@
           bennes 
         </p>
 
-        <div><nuxt-link to="/" class="button text-black absolute cursor-pointer z-20 px-4 py-3 bg-black text-white rounded">Découvrir nos offres <font-awesome-icon class="transform -rotate-90 ml-4  scale-150" :icon="['fas', 'long-arrow-down']" /></nuxt-link></div>
+        <div><nuxt-link to="/" class="button hidden md:block text-black absolute cursor-pointer z-20 px-4 py-3 bg-black text-white rounded">Découvrir nos offres <font-awesome-icon class="transform -rotate-90 ml-4  scale-150" :icon="['fas', 'long-arrow-down']" /></nuxt-link></div>
 
-        <div class="flex justify-between">
+        <div class="flex justify-between w-full">
 
           <img class="w-1/2 img2 md:hidden" :src="require('~/assets/dumpster_icon.png')" alt="contour d'un container">
 
@@ -136,6 +136,9 @@ img{
     color:white;
     width:30px;
     margin: 5px 0 0 10%
+  }
+  .arrowBlockDroite, .arrowBlockGauche{
+    transform: scale(0.5) rotate(-90deg);
   }
 
 }

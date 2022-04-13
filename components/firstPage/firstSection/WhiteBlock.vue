@@ -96,13 +96,15 @@ export default {
 <style scoped>
 
 .blockPrincipal{
-  width: 100%;
   margin-top: 4vh;
+  position:absolute;
+  bottom:4vw;
+  right:5%;
+  left:calc(5% + 5rem );
 }
 
 .block::before{
 	content: "";
-	float: left;
 	padding-bottom: 45%; 	/* initial ratio of 1:1*/
 	padding-top: 45%; 	/* initial ratio of 1:1*/
 }
@@ -113,10 +115,11 @@ export default {
   height:100%;
   justify-content: center;
   align-items: center;
+  align-content: center;
 }
-.block p:nth-child(3){
+/* .block p:nth-child(3){
   margin-left:-2px
-}
+} */
 /* .block:nth-child(1){
   border-right: 1px solid #0386FE;
 }
@@ -134,6 +137,9 @@ export default {
 }
 .block:nth-child(3){
   border-right: 1px solid black;
+}
+.block:nth-child(4){
+  border-right: 1px solid rgba(0,0,0,0);
 }
 .imgContainer{
   width:50%;
@@ -153,36 +159,40 @@ img{
   height: 100%;
   display: flex;
   flex-flow:column wrap;
-  justify-content: baseline;
-  padding-top:1vw
+  padding-top:1vw;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 h3{
   font-family: 'Montserrat', sans-serif;
   font-style: italic;
   font-weight: 600;
-  font-size:0.65vw;
-  margin-left:-5px
+  font-size:clamp(10px,0.8vw,15px);
+  margin-top: -2vw;
+  margin-bottom: 1.3vw;
 }
 p{
   font-family: 'Montserrat', sans-serif;
-  font-size:0.4vw;
+  font-size:clamp(7px,0.6vw,12px);
   font-weight: 600;
 }
 .number{
   font-weight: 800;
-  font-size: 0.9vw;
-  margin-top:0.7vw
+  font-size: clamp(10px,1.4vw,20px);
 }
 
 @media screen and (min-width: 1920px){
+  .blockPrincipal{
+    margin-top: 8vh;
+  }
   .Pcontainer{
     padding-top:0px;
   }
 
   h3{
     font-size:17px;
-    margin-left:-10px
+    margin-top: -30px;
   }
 
   p{
@@ -190,8 +200,6 @@ p{
   }
   .number{
     font-size:30px;
-    margin-top:18px
-
   }
 }
 

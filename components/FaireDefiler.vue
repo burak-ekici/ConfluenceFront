@@ -75,7 +75,7 @@ p{
   }
 }
 
-@media only screen and ( min-resolution: 190dpi){
+@media only screen and ( min-resolution: 190dpi) and (max-width: 768px){
   .containeur{
     bottom:0;
     left:0;

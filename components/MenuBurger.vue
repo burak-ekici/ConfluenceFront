@@ -2,9 +2,9 @@
   <div>
     
     <div @click="toggleMenuBurger" class="md:hidden absolute right-4 w-16 z-50 h-full flex flex-col items-center justify-center cursor-pointer">
-      <div class="w-10 h-1 rounded-full bg-white "></div>
-      <div class="w-10 h-1 rounded-full bg-white mt-2"></div>
-      <div class="w-10 h-1 rounded-full bg-white mt-2"></div>
+      <div class="w-8 sm:w-10 h-1 rounded-full bg-white "></div>
+      <div class="w-8 sm:w-10 h-1 rounded-full bg-white mt-2"></div>
+      <div class="w-8 sm:w-10 h-1 rounded-full bg-white mt-2"></div>
     </div>
     
     <transition name="MenuBurgerList">
@@ -67,8 +67,6 @@ export default {
   transition : all 0.5s
 }
 
-@media only screen and ( min-resolution: 190dpi){
-  
-}
+
 
 </style>
