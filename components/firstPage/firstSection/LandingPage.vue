@@ -150,8 +150,8 @@ export default{
   }
 
   .SecondP, .TroisiemeP{
-    font-size:17px;
-    line-height: 20px;
+    font-size:2vh;
+    line-height: 3vh;
     margin-top:4%;
   }
 

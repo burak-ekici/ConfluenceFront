@@ -158,15 +158,12 @@ img{
     height: calc(25% - 8%);
     overflow: hidden;
   }
-  .logoArrowContainer1{
-    padding-bottom: 2vw;
-  }
-  .logoArrowContainer2{
-    padding-bottom: 2vw;
+  img{
+    padding-bottom: 2vh;
   }
   .arrowBlockDroite, .arrowBlockGauche{
     transform: scale(0.75) rotate(-90deg);
-    
+    margin-left:15vw
   }
 }
 
