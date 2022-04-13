@@ -167,7 +167,7 @@ img{
   }
 }
 
-@media screen and ( min-width: 768px){
+@media screen and ( min-width: 769px){
   .secondSection{
     height:100%;
     width:40%;
@@ -197,5 +197,6 @@ img{
     letter-spacing: clamp(4px, 0.15vw , 15px);
   }
 }
+
 
 </style>

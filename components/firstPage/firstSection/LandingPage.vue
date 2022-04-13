@@ -1,5 +1,5 @@
 <template>
-  <div ref="landingPage" id="first" class="relative w-full h-screen absolute top-0 bottom-0 md:flex">
+  <div ref="landingPage" id="first" class="relative containeur w-full h-screen absolute top-0 bottom-0 md:flex">
 
     <div class="principal relative">
 
@@ -230,11 +230,12 @@ export default{
     padding-top : 100px;
   }
   .PremierP{
-    font-size: 14px;
+    font-size: 2vh;
+    line-height: 3vh;
   }
   .SecondP,.TroisiemeP{
-    font-size : 10px;
-    margin-top: 20px;
+    font-size : 1.6vh;
+    margin-top: 3vh;
   }
   .button{
     font-size: 10px;
