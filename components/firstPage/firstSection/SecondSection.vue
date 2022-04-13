@@ -171,7 +171,7 @@ img{
   .secondSection{
     height:100%;
     width:40%;
-    padding-top:6rem
+    padding-top:4rem
   }
   .texteBlockGauche , .texteBlockDroite{
     font-size: clamp(8px,1.5vw,27px);

@@ -7,7 +7,7 @@
         <h2 class=' text-md sm:text-xl font-light italic -mt-2 transpp'>TRANSPORTS</h2>
       </div>
 
-      <MenuBurger />
+      <MenuBurger :isMenuBurgerOpen="isMenuBurgerOpen" @toggleMenuBurgerStatus='toggleMenuBurgerStatus' />
       
       <div class='hidden md:w-2/3 w-1/2 md:flex items-center pr-10'>
         <nav class="w-full text-center text-white flex items-center justify-between lg:justify-around text-sm font-semibold">
@@ -35,6 +35,21 @@
   </div>
 </div>
 </template>
+
+<script>
+export default {
+  props:{
+    isMenuBurgerOpen:{
+      type:Boolean
+    }
+  },
+  methods:{
+    toggleMenuBurgerStatus(value){
+      this.$emit('toggleMenuBurgerStatus' , value)
+    }
+  }
+}
+</script>
 
 <style lang="scss" scoped>
 @import '@/assets/scss/_variables.scss';

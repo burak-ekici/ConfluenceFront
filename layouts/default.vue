@@ -1,12 +1,26 @@
 <template>
-  <div>
-    <the-header />
+  <div @click="closeBurgersMenu">
+    <the-header :isMenuBurgerOpen="isMenuBurgerOpen" @toggleMenuBurgerStatus='toggleMenuBurgerStatus' />
     <Nuxt />
   </div>
 </template>
 
 <script>
-
+export default{
+  data(){
+    return{
+      isMenuBurgerOpen : false
+    }
+  },
+  methods:{
+    toggleMenuBurgerStatus(value){
+      this.isMenuBurgerOpen = value
+    },
+    closeBurgersMenu(){
+      this.isMenuBurgerOpen = false
+    }
+  }
+}
 </script>
 
 <style>
