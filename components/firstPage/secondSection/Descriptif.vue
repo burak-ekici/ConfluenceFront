@@ -177,14 +177,14 @@
     .buttonDiv{
       position:absolute;
       bottom:0%;
-      right:calc(1vh + 1vw);
+      right:10%;
       z-index:20;
       
       
       a{
         background:black;
         color:white;
-        padding: 1vh 2vw;
+        padding: 2vh 4vw;
 
         &:hover{
           background:black;
@@ -200,10 +200,10 @@
 @media screen and (max-width : 390px) and (min-resolution : 190dpi){
   .containeur{
     transform: scale(0.8);
+    margin-top:-4vh;
 
     .buttonDiv{
       bottom: -11vh;
-      right:10%
     }
 
   } 
