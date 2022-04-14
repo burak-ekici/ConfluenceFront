@@ -202,7 +202,7 @@
     transform: scale(0.8);
 
     .buttonDiv{
-      bottom: 0vh;
+      bottom: -11vh;
       right:10%
     }
 
