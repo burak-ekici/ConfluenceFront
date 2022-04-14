@@ -96,6 +96,7 @@
   .Confiance{
     font-family: 'Poppins',sans-serif;
     margin-top: 6vh;
+    
     h3{
       font-size: clamp(11px,0.8vw,14px);
       font-weight: 600;
@@ -104,8 +105,10 @@
       display:flex;
       flex-flow:row wrap;
       justify-content: center;
+      height:20vh;
       img{
-        width:50%;
+        width:33%;
+        height:50%;
       }
     }
   }
