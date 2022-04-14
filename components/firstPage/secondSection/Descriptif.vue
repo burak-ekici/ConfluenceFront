@@ -104,7 +104,7 @@
     .LOGO{
       display:flex;
       flex-flow:row wrap;
-      justify-content: center;
+      justify-content: flex-start;
       height:20vh;
       img{
         width:33%;
@@ -138,6 +138,8 @@
     
   }
 }
+
+
 
 @media screen and (max-width : 768px){
   .containeur{
@@ -174,7 +176,7 @@
 
     .buttonDiv{
       position:absolute;
-      bottom:-1vh;
+      bottom:5%;
       right:calc(1vh + 1vw);
       z-index:20;
       
@@ -193,6 +195,20 @@
       
     }
   }
+}
+
+@media screen and (max-width : 400px){
+  .containeur{
+    transform: scale(0.8);
+
+    .buttonDiv{
+      bottom: -12vh;
+      right:10%
+    }
+
+  } 
+
+  
 }
 
 
