@@ -40,22 +40,22 @@ p:nth-child(2){
 
 @media screen and (max-width : 768px){
   .number{
-    font-size:10vw;
+    font-size:9vw;
   }
   img{
-    width:50px;
+    width:40px;
     display: inline-block;
   }
   p:nth-child(1){
     text-align: left;
   }
   p:nth-child(2){
-    font-size: 9vw;
+    font-size: 8vw;
     font-weight: 500;
   }
   
   .Pcontainer{
-    bottom:10%;
+    top:10%;
     left:4vw
   }
   .fumeeNoir{
