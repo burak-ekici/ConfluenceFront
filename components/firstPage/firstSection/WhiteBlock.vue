@@ -210,7 +210,7 @@ p{
     
     .blockPrincipal{
       height:15vh;
-      width:80%;
+      width:70%;
       display:flex;
       flex-direction: row;
       flex-wrap: wrap;

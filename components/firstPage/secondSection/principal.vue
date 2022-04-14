@@ -26,5 +26,23 @@
   .section2{
     width:55%
   }
+
+}
+@media screen and (max-width : 768px){
+  #second{
+    padding-left: 0px;
+    flex-flow:column wrap;
+  }
+  .section1{
+    height:70%;
+    width:100%;
+  }
+  .section2{
+    height: calc(30% - 6rem);
+    background-color: red;
+    width: 100%;
+    margin-top: 2rem;
+    background-size: cover;
+  }
 }
 </style>

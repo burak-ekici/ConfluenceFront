@@ -114,7 +114,7 @@
   }
 
   .buttonDiv{
-    position:absolute;
+    position:relative;
     bottom:5vh;
     right:5vh;
     
@@ -136,6 +136,62 @@
     }
     }
     
+  }
+}
+
+@media screen and (max-width : 768px){
+  .containeur{
+    
+
+    .Titre_Paragraphe{
+      padding-top: 3vh;
+
+      h2{
+        margin-bottom: 0.75vh;
+      }
+      p{
+        margin-top:1.5vh;
+      }
+    }
+    .Qualite{
+      margin-top:2vh;
+      width:100%;
+
+      div{
+        margin-bottom: 2vh;
+      }
+    }
+
+    .Confiance{
+      margin-top: 3vh;
+      .LOGO{
+        img{
+          width:50%;
+          transform: scale(80%);
+        }
+      }
+    }
+
+    .buttonDiv{
+      position:absolute;
+      bottom:-1vh;
+      right:calc(1vh + 1vw);
+      z-index:20;
+      
+      
+      a{
+        background:black;
+        color:white;
+        padding: 1vh 2vw;
+
+        &:hover{
+          background:black;
+          color:white;
+        }
+  
+      }
+      
+    }
   }
 }
 

@@ -149,6 +149,7 @@ img{
   } 
   .arrowBlockDroite, .arrowBlockGauche{
     transform: scale(0.75) rotate(-90deg);
+    margin-left: -4vw;
     
   }
 }
@@ -163,7 +164,6 @@ img{
   }
   .arrowBlockDroite, .arrowBlockGauche{
     transform: scale(0.75) rotate(-90deg);
-    margin-left:15vw
   }
 }
 
