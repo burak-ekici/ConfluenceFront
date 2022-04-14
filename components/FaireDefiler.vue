@@ -53,6 +53,9 @@ export default {
   height:100%;
   padding-top:6rem
 }
+.texteDefiler{
+  white-space:nowrap;
+}
 
 p{
   font-family: 'Montserratscss', sans-serif;

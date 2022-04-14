@@ -206,16 +206,16 @@ p{
 @media only screen 
   and (min-width: 770px) 
   and (max-height: 1366px) 
-  and (-webkit-min-device-pixel-ratio: 1.5) {
+  and (min-resolution: 190dpi) {
     
     .blockPrincipal{
-      height:20vh;
-      width:75%;
+      height:15vh;
+      width:80%;
       display:flex;
       flex-direction: row;
       flex-wrap: wrap;
       margin:0 auto;
-      bottom:30vh;
+      bottom:20vh;
     }
     .block{
       width:50%;

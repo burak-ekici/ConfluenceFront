@@ -125,6 +125,11 @@
       padding:1.5vh 2vw;
       font-family: 'Montserrat', sans-serif;
       font-weight: 700;
+
+      &:hover{
+        background:black;
+        color:white;
+      }
       .arrow{
       margin-left: 2vw;
       padding-right: 4px;
