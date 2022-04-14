@@ -176,7 +176,7 @@
 
     .buttonDiv{
       position:absolute;
-      bottom:5%;
+      bottom:0%;
       right:calc(1vh + 1vw);
       z-index:20;
       
@@ -197,7 +197,7 @@
   }
 }
 
-@media screen and (max-width : 400px){
+@media screen and (max-width : 389px){
   .containeur{
     transform: scale(0.8);
 
