@@ -197,12 +197,12 @@
   }
 }
 
-@media screen and (max-width : 389px){
+@media screen and (max-width : 390px) and (min-resolution : 190dpi){
   .containeur{
     transform: scale(0.8);
 
     .buttonDiv{
-      bottom: -12vh;
+      bottom: 0vh;
       right:10%
     }
 
