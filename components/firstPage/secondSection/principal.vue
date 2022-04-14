@@ -45,4 +45,10 @@
     background-size: cover;
   }
 }
+@media screen and (max-width : 390px) and (min-resolution : 190dpi){
+  .section2{
+
+    margin-top: 3rem;
+  }
+}
 </style>
