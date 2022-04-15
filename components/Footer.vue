@@ -55,6 +55,7 @@
   flex-flow:row nowrap;
   align-items: center;
   color:white;
+ 
 
   .logoContaineur{
     width:20%;
@@ -103,6 +104,51 @@
 
       
     }
+    
+  }
+  @media screen and (max-width:1400px) and (min-resolution: 190dpi){
+      .logoContaineur{
+        display:none
+      }
+      .section2{
+        display:none
+      }
+      .section3{
+        width:100%;
+        margin-top:-3vh;
+        p{
+          text-align: center;
+        }
+        nav{
+          justify-content: space-between;
+          width:100%;
+
+          a{
+            transform: scale(200%);
+            transform-origin: center;
+            text-align: center;
+          }
+        }
+      }
+  }
+  @media screen and (max-width:1400px) and (min-resolution: 190dpi){
+    .section3{
+      transform: scale(70%);
+      margin-top:-5vh;
+
+      p{
+        margin-bottom:5vh;
+      }
+    }
   }
 }
+@media screen and (max-width:1400px) and (min-resolution: 190dpi){
+  .containeur{
+    padding-left: 0;
+  }
+}
+
+
+
+ 
 </style>

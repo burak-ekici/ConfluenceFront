@@ -41,6 +41,7 @@ export default {
 .section1{
   background: url('~/assets/man_tgs_benne.png');
   background-position: center;
+  background-size: cover;
 }
 
 @media screen and (min-width: 769px){
