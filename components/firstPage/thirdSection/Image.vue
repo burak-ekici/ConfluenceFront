@@ -2,7 +2,7 @@
   <div class=" h-full w-full relative">
     <div class="md:block md:absolute md:top-0 md:bottom-0 md:right-0 md:left-0 fumeeNoir z-10"></div>
     <div class="absolute z-20 Pcontainer">
-      <p class="w-full"><img :src="require('~/assets/container_white_icon.png')" alt=""> <span ref="countImgSection2" data-target="1784" class="number text-3xl ml-4 relative top-2">1784</span> </p>
+      <p class="w-full"> <span ref="countImgSection3" data-target="2837" class="number text-3xl ml-4 relative top-2">2837</span> <img :src="require('~/assets/dumpster_icon.png')" alt=""></p>
       <p class="w-full mt-2">Relais terminées</p>
     </div>
   </div>
@@ -24,7 +24,7 @@ export default {
   },
   methods:{
     incrementCounter(){
-      const counters = [this.$refs.countImgSection2]
+      const counters = [this.$refs.countImgSection3]
         counters.forEach(element => {
           element.innerText = '0'
           const updateCounter = ()=>{
@@ -61,23 +61,27 @@ export default {
 img{
   width:40px;
   display: inline-block;
+  margin-left:14px
 }
 p{
   font-family: 'Montserrat', sans-serif;
 }
 p:nth-child(1){
-  text-align: right;
+  text-align: left;
 }
 p:nth-child(2){
   font-family: 'Poppins', sans-serif;
   font-size: 2vw;
 }
 .Pcontainer{
-  bottom:6vw;
-  right:4vw
+  position:absolute;
+  bottom:10%;
+  left:10%;
+  color:white
 }
 .number{
   font-weight: 600;
+  margin-left: 0;
 }
 
 @media screen and (max-width : 768px){

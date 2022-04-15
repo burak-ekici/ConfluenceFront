@@ -1,17 +1,44 @@
 <template>
-  <div id="second" class="w-full h-screen overflow-hidden relative md:flex pl-20">
+  <div ref="section2Containeur" id="second" class="w-full h-screen overflow-hidden relative md:flex pl-20">
 
     <div class="section1 h-full w-full">
       <FirstPageSecondSectionDescriptif />
     </div>
 
     <div class="section2 h-full w-full text-white relative">
-      <FirstPageSecondSectionImage />
+      <FirstPageSecondSectionImage :observed="observerIsActivated" />
     </div>
 
-    <FaireDefiler hashToScrollBottom="" hashToScrollTop="first" />
+    <FaireDefiler hashToScrollBottom="third" hashToScrollTop="first" />
   </div>
 </template>
+
+<script>
+export default {
+  data(){
+    return{
+      observerIsActivated : false
+    }
+  },
+  mounted(){
+    const options = {
+      root: null,
+      rootMargin: '0px',
+      threshold:0.2
+    }
+    const observer = new IntersectionObserver((entries , observer)=>{
+      entries.forEach( entry => {
+        if(entry.isIntersecting){
+          this.observerIsActivated = true
+        }
+      })
+      
+    }, options);
+
+    observer.observe(this.$refs.section2Containeur)
+  }
+}
+</script>
 
 <style scoped>
 .section2{

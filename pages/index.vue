@@ -2,7 +2,8 @@
 <div class="w-full MainContainer overflow-hidden" >
   <div class="h-full PageContainer w-full overflow-hidden ">
     <FirstPageFirstSectionLandingPage />
-    <FirstPageSecondSectionPrincipal />
+    <FirstPageSecondSectionContaineur />
+    <FirstPageThirdSectionContaineur />
   </div>
 </div>
 </template>
