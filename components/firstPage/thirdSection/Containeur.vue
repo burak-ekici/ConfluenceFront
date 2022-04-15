@@ -64,14 +64,14 @@ export default {
     margin-top: 2rem;
     background-size: cover;
     position:absolute;
-    top:65%;
+    top:68%;
     background-position: bottom;
   }
   .section2{
     height:70%;
     width:100%;
     position:absolute;
-    top:0
+    top:0;
   }
 }
 @media screen and (max-width : 390px) and (min-resolution : 190dpi){
@@ -81,6 +81,8 @@ export default {
   }
 }
 
+
+
 @media screen and (min-width : 800px) and (max-width : 1367px) and (min-resolution : 190dpi){
   #third{
     padding-left: 0px;
@@ -89,6 +91,8 @@ export default {
   .section2{
     height:70%;
     width:100%;
+    position:absolute;
+    top:0
   }
   .section1{
     height: calc(30% - 4rem);
@@ -96,6 +100,9 @@ export default {
     width: 100%;
     margin-top: 2rem;
     background-size: cover;
+    position:absolute;
+    top:65%;
+    background-position: center;
   }
 }
 
