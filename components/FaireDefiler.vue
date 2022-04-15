@@ -96,4 +96,23 @@ p{
     transform: rotate(0);
   }
 }
+
+@media screen and (min-width : 800px) and (max-width : 1367px) and (min-resolution : 190dpi){
+  .containeur{
+    bottom:0;
+    left:0;
+    right:0;
+    width:100%;
+    height:8%;
+    padding : 2rem 0 ;
+    display:flex;
+    justify-content: space-between;
+    flex-flow:row nowrap;
+    padding: 0 2rem;
+    z-index: 10;
+  }
+  .texteDefiler{
+    transform: rotate(0);
+  }
+}
 </style>

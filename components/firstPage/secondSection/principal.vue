@@ -51,4 +51,22 @@
     margin-top: 3rem;
   }
 }
+
+@media screen and (min-width : 800px) and (max-width : 1367px) and (min-resolution : 190dpi){
+  #second{
+    padding-left: 0px;
+    flex-flow:column wrap;
+  }
+  .section1{
+    height:70%;
+    width:100%;
+  }
+  .section2{
+    height: calc(30% - 4rem);
+    background-color: red;
+    width: 100%;
+    margin-top: 2rem;
+    background-size: cover;
+  }
+}
 </style>

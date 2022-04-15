@@ -131,9 +131,9 @@
         color:white;
       }
       .arrow{
-      margin-left: 2vw;
-      padding-right: 4px;
-    }
+        margin-left: 2vw;
+        padding-right: 4px;
+      }
     }
     
   }
@@ -197,6 +197,21 @@
   }
 }
 
+
+
+@media screen and (min-width : 768px){
+  .buttonDiv{
+      float:right;
+
+      a{
+        width:auto;
+        text-align: center;
+      }
+  }
+  
+
+}
+
 @media screen and (max-width : 390px) and (min-resolution : 190dpi){
   .containeur{
     transform: scale(0.8);
@@ -207,9 +222,10 @@
     }
 
   } 
-
   
 }
+
+
 
 
 

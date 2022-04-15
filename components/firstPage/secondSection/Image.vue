@@ -40,7 +40,7 @@ p:nth-child(2){
 
 @media screen and (max-width : 768px){
   .number{
-    font-size:9vw;
+    font-size: clamp(27px,9vw,45px);
   }
   img{
     width:40px;
@@ -50,7 +50,7 @@ p:nth-child(2){
     text-align: left;
   }
   p:nth-child(2){
-    font-size: 8vw;
+    font-size: clamp(20px,8vw,35px);
     font-weight: 500;
   }
   

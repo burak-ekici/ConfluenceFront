@@ -165,6 +165,7 @@ img{
   .arrowBlockDroite, .arrowBlockGauche{
     transform: scale(0.75) rotate(-90deg);
   }
+  
 }
 
 @media screen and ( min-width: 769px){
