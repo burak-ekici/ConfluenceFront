@@ -1,10 +1,6 @@
 <template>
 <div class="w-full MainContainer overflow-hidden" >
-  <div class="h-full PageContainer w-full overflow-hidden ">
-    <FirstPageFirstSectionLandingPage />
-    <FirstPageSecondSectionContaineur />
-    <FirstPageThirdSectionContaineur />
-  </div>
+  <FirstPage />
 </div>
 </template>
 

@@ -108,6 +108,11 @@ p:nth-child(2){
   }
 }
 
-
+@media screen and (min-width : 800px) and (max-width : 1367px) and (min-resolution : 190dpi){
+  .Pcontainer{
+    bottom:8vw;
+    right:8vw
+  }
+}
 
 </style>

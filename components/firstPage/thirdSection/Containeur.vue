@@ -6,7 +6,7 @@
     <div class="section2">
     <FirstPageThirdSectionDescriptif />
     </div>
-    <FaireDefiler hashToScrollBottom="" hashToScrollTop="second" />
+    <FaireDefiler hashToScrollBottom="last" hashToScrollTop="second" />
   </div>
 </template>
 
