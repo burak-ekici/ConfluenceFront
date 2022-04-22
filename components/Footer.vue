@@ -9,7 +9,7 @@
           <NuxtLink class="hover:text-black ease-out duration-100" to='/a'>
             ACCEUIL
           </NuxtLink>
-          <NuxtLink class="hover:text-black ease-out duration-100" to='/v'>
+          <NuxtLink class="hover:text-black ease-out duration-100" to='/services'>
             SERVICES
           </NuxtLink>
           <NuxtLink class="hover:text-black ease-out duration-100" to='/r'>
@@ -178,7 +178,4 @@
   }
 }
 
-
-
- 
 </style>

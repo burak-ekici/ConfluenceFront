@@ -1,6 +1,6 @@
 <template>
 <div class="w-full MainContainer overflow-hidden" >
-  <FirstPage />
+  <SecondPage />
 </div>
 </template>
 
@@ -24,6 +24,3 @@ export default {
 
 }
 </style>
-
-
-

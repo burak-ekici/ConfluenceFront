@@ -14,7 +14,7 @@
           <NuxtLink class="hover:text-black ease-out duration-100" to='/a'>
             ACCEUIL
           </NuxtLink>
-          <NuxtLink to='/v'>
+          <NuxtLink to='/services'>
             SERVICES
           </NuxtLink>
           <NuxtLink to='/r'>
