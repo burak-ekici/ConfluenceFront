@@ -1,6 +1,6 @@
 <template>
 <div class="containeur bg-white h-screen pt-16 md:pt-24 w-full relative">
-  <div class="flex flex-col md:flex-row w-full h-full md:px-16 md:py-16 xl:px-32 2xl:px-64 2xl:space-x-4 ">
+  <div class="flex flex-col md:flex-row w-full h-full md:py-8 xl:px-32 2xl:px-64 2xl:space-x-4 ">
 
     <div class=" w-full h-full  p-4 md:w-1/3 xl:p-4 2xl:p-8">
       <div class="bg-white h-full md:h-full w-full rounded-xl block1 relative">

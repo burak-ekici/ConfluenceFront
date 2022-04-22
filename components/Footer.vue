@@ -6,7 +6,7 @@
     <div class="section2">
       <p>Confluence transports, société par actions simplifiée, immatriculée sous le SIREN 838007755, est active depuis 4 années. Implantée à Lyon (69002) et à Mornant (69440), nous sommes spécialisé dans le secteur d’activité des transports routiers de fret interurbains et la livraison de bennes avec chauffeurs.</p>
         <nav class="w-full text-center text-white flex items-center justify-between lg:justify-around text-sm font-semibold">
-          <NuxtLink class="hover:text-black ease-out duration-100" to='/a'>
+          <NuxtLink class="hover:text-black ease-out duration-100" to='/'>
             ACCEUIL
           </NuxtLink>
           <NuxtLink class="hover:text-black ease-out duration-100" to='/services'>

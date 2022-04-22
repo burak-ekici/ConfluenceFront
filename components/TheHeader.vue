@@ -11,7 +11,7 @@
       
       <div class='hidden md:w-2/3 w-1/2 md:flex items-center pr-10'>
         <nav class="w-full text-center text-white flex items-center justify-between lg:justify-around text-sm font-semibold">
-          <NuxtLink class="hover:text-black ease-out duration-100" to='/a'>
+          <NuxtLink class="hover:text-black ease-out duration-100" to='/'>
             ACCEUIL
           </NuxtLink>
           <NuxtLink to='/services'>
@@ -59,7 +59,7 @@ export default {
 .contact{
   font-size:12px
 }
-.nuxt-link-active {
+.nuxt-link-exact-active {
   color:rgb(83, 194, 246)
 }
 
