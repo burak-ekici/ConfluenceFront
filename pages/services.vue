@@ -14,7 +14,9 @@ export default {
 <style lang="scss" scoped>
 @import '@/assets/scss/_variables.scss';
 @media screen and (min-width: 1920px){
-  
+  .PageContainer{
+    width:1920px;
+  }
   .MainContainer{
     display:flex;
     flex-flow:column wrap;

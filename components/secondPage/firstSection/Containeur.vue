@@ -1,20 +1,20 @@
 <template>
-<div class="containeur bg-white h-screen pt-16 w-full relative">
-  <div class="flex flex-col md:flex-row w-full h-full md:px-16 xl:px-32 2xl:px-64 space-x-4 ">
+<div class="containeur bg-white h-screen pt-16 md:pt-24 w-full relative">
+  <div class="flex flex-col md:flex-row w-full h-full md:px-16 md:py-16 xl:px-32 2xl:px-64 2xl:space-x-4 ">
 
-    <div class="md:w-1/3 w-full h-full p-8">
+    <div class=" w-full h-full  p-4 md:w-1/3 xl:p-4 2xl:p-8">
       <div class="bg-white h-full md:h-full w-full rounded-xl block1 relative">
         <nuxt-link class="link rounded-xl p-4 py-6" to="" >TRANSPORTS <br>  ROUTIERS <br> INTERURBAINS <font-awesome-icon class=" arrow" :icon="['fas', 'long-arrow-down']" /></nuxt-link>
       </div>
     </div>
 
-    <div class="md:w-1/3 w-full h-full p-8 ">
+    <div class=" w-full h-full md:w-1/3 p-4 xl:p-4 2xl:p-8 ">
       <div class="bg-white  h-full md:h-full w-full rounded-xl block2 relative">
           <nuxt-link class="link rounded-xl p-4 py-6" to="" >LOCATION <br> DE <br> BENNES  <font-awesome-icon class=" arrow" :icon="['fas', 'long-arrow-down']" /></nuxt-link>
       </div>
     </div>
 
-    <div class="md:w-1/3 w-full h-full p-8 ">
+    <div class=" w-full h-full p-4 md:w-1/3 xl:p-4 2xl:p-8 ">
       <div class="bg-white h-full md:h-full w-full rounded-xl block3 relative">
         <nuxt-link class="link rounded-xl p-4 py-6 link3" to="" > SERVICES SUR MESURE<br> ET <br> ASSISTANCE <font-awesome-icon class=" arrow" :icon="['fas', 'long-arrow-down']" /></nuxt-link>
       </div>
@@ -93,10 +93,7 @@ export default {
   }
   
 }
-@media screen and (min-width:769px) and (max-width:1280px){
-  
-  
-}
+
 
 
 </style>
