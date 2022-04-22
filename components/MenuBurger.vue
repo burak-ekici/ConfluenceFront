@@ -13,7 +13,7 @@
           <nuxt-link to='/'>
             ACCEUIL
           </nuxt-link>
-          <nuxt-link to='/'>
+          <nuxt-link to='/services'>
             SERVICES
           </nuxt-link>
           <nuxt-link to='/'>

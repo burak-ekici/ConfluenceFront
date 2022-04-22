@@ -1,6 +1,6 @@
 <template>
 <div class="containeur bg-white h-screen pt-16 w-full relative">
-  <div class="flex flex-col md:flex-row w-full h-full md:px-32 lg:px-64 space-x-4 ">
+  <div class="flex flex-col md:flex-row w-full h-full md:px-16 xl:px-32 2xl:px-64 space-x-4 ">
 
     <div class="md:w-1/3 w-full h-full p-8">
       <div class="bg-white h-full md:h-full w-full rounded-xl block1 relative">
@@ -91,6 +91,10 @@ export default {
   .block2{
     background-image: url('~/assets/man_tgs_benne.png');
   }
+  
+}
+@media screen and (min-width:769px) and (max-width:1280px){
+  
   
 }
 
