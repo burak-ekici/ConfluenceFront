@@ -60,7 +60,8 @@ export default {
   font-size:12px
 }
 .nuxt-link-exact-active {
-  color:rgb(83, 194, 246)
+  font-weight:900;
+  font-size : 20px
 }
 
 a:hover:not(.nuxt-link-active){
