@@ -61,7 +61,8 @@ export default {
 }
 .nuxt-link-exact-active {
   font-weight:900;
-  font-size : 20px
+  font-size : 16px;
+  opacity: 0.8
 }
 
 a:hover:not(.nuxt-link-active){
