@@ -61,11 +61,10 @@ export default {
 }
 .nuxt-link-exact-active {
   font-weight:900;
-  font-size : 16px;
-  opacity: 0.8
+  font-size : 18px;
 }
 
-a:hover:not(.nuxt-link-active){
+a:hover:not(.nuxt-link-exact-active){
   color:#023564;
 }
 .contact:hover{
